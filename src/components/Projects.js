@@ -2,9 +2,9 @@
 import React from 'react';
 
 const projects = [
-  { title: 'Traduzco cosas', description: 'Me la re banco con traducir cosas' },
-  { title: 'Robo a las IAs', description: 'Master of the Universe' },
-  { title: 'Proyecto 3', description: 'Descripción del proyecto 3' },
+  { title: 'Traducción', description: 'Se realizó traducción de un documento con gráficos incluidos sobre medioambiente' },
+  { title: 'Entusiasta de IAs', description: 'Constante investigación de nuevas tecnologías, sobre todo en inteligencias artificiales' },
+  { title: 'Soporte IT', description: 'Asistencia para el mayor entendimiento de las tecnologías' },
 ];
 
 const Projects = () => {
