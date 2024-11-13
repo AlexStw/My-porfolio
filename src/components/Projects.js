@@ -1,26 +1,25 @@
 // src/components/Projects.js
 import React from 'react';
 
-const projects = [
-  { title: 'Traducción', description: 'Se realizó traducción de un documento con gráficos incluidos sobre medioambiente' },
-  { title: 'Entusiasta de IAs', description: 'Constante investigación de nuevas tecnologías, sobre todo en inteligencias artificiales' },
-  { title: 'Soporte IT', description: 'Asistencia para el mayor entendimiento de las tecnologías' },
-];
-
-const Projects = () => {
-  return (
-    <section style={{ padding: '2em' }}>
-      <h2>Mis Proyectos</h2>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
-        {projects.map((project, index) => (
-          <div key={index} style={{ border: '1px solid #ddd', padding: '1em' }}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
-        ))}
+const Projects = () => (
+  <section className="p-8 bg-gray-100">
+    <h2 className="text-2xl font-bold text-center text-blue-900 mb-6">Mis Proyectos</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-semibold text-blue-800">Proyecto 1</h3>
+        <p className="text-gray-600 mt-2">Descripción del proyecto 1...</p>
       </div>
-    </section>
-  );
-};
+      <div className="bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-semibold text-blue-800">Proyecto 2</h3>
+        <p className="text-gray-600 mt-2">Descripción del proyecto 2...</p>
+      </div>
+      <div className="bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-xl font-semibold text-blue-800">Proyecto 3</h3>
+        <p className="text-gray-600 mt-2">Descripción del proyecto 3...</p>
+      </div>
+      {/* Agrega más proyectos según sea necesario */}
+    </div>
+  </section>
+);
 
 export default Projects;
